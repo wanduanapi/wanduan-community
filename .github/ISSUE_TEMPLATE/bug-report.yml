@@ -8,7 +8,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        请不要提交访问令牌、密钥、个人信息或安全漏洞细节。安全问题请阅读 [SECURITY.md](../../SECURITY.md)。
+        请不要提交访问令牌、密钥、个人信息或安全漏洞细节。安全问题请阅读 [SECURITY.md](https://github.com/wanduanapi/wanduan-community/blob/main/SECURITY.md)。
   - type: dropdown
     id: interface
     attributes:
