@@ -1,6 +1,6 @@
-name: 节假日数据修订
-description: 报告节假日、调休或补班数据可能存在的问题。
-title: "[Data] "
+name: 节假日数据反馈
+description: 报告节假日、调休或补班数据可能有误。
+title: "[数据] "
 labels:
   - data
   - triage
@@ -8,7 +8,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        节假日数据需要依据正式、可验证的权威文件维护。请不要只根据历史规律推测尚未发布的安排。
+        节假日数据会依据正式、可验证的权威文件维护。请尽量提供来源，也不要只根据历史规律推测尚未发布的安排。
   - type: input
     id: year
     attributes:
@@ -27,24 +27,24 @@ body:
   - type: textarea
     id: current_result
     attributes:
-      label: 当前结果
+      label: 当前返回结果
       placeholder: "请说明当前 API 返回的日期类型、节日名称或工作日结果。"
     validations:
       required: true
   - type: textarea
     id: expected_result
     attributes:
-      label: 建议结果
+      label: 你认为应该是什么
     validations:
       required: true
   - type: input
     id: source_url
     attributes:
-      label: 权威来源链接
+      label: 来源链接
       description: 请提供国务院、国务院办公厅或其他可验证的正式来源。
     validations:
       required: true
   - type: textarea
     id: additional_context
     attributes:
-      label: 补充说明
+      label: 补充信息

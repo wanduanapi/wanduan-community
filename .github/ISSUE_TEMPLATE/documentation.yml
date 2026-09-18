@@ -1,6 +1,6 @@
-name: 文档问题
-description: 报告开发者文档中的错误、遗漏或难以理解之处。
-title: "[Docs] "
+name: 文档反馈
+description: 告诉我们文档哪里写错了、没写清楚或还可以更好。
+title: "[文档] "
 labels:
   - documentation
   - triage
@@ -8,19 +8,19 @@ body:
   - type: input
     id: page_url
     attributes:
-      label: 文档地址
+      label: 页面地址
       placeholder: "https://docs.wanduanapi.com/..."
     validations:
       required: true
   - type: textarea
     id: problem
     attributes:
-      label: 问题描述
+      label: 哪里需要改进
       placeholder: "请说明错误、遗漏或容易产生歧义的内容。"
     validations:
       required: true
   - type: textarea
     id: suggestion
     attributes:
-      label: 修改建议
+      label: 你的建议
       placeholder: "如果有建议的文字或示例，请填写在这里。"

@@ -1,6 +1,6 @@
-name: API 或 MCP 问题
-description: 报告可以复现的 REST API 或 MCP Tool 行为异常。
-title: "[Bug] "
+name: API 或 MCP 异常
+description: 报告可以复现的接口行为异常。
+title: "[问题] "
 labels:
   - bug
   - triage
@@ -8,11 +8,11 @@ body:
   - type: markdown
     attributes:
       value: |
-        请不要提交访问令牌、密钥、个人信息或安全漏洞细节。安全问题请阅读 [SECURITY.md](https://github.com/wanduanapi/wanduan-community/blob/main/SECURITY.md)。
+        提交前请确认这不是安全问题。不要填写访问令牌、密钥、个人信息或安全漏洞细节；安全问题请阅读 [安全说明](https://github.com/wanduanapi/wanduan-community/blob/main/SECURITY.md)。
   - type: dropdown
     id: interface
     attributes:
-      label: 使用的接口
+      label: 调用方式
       options:
         - REST API
         - MCP Tool
@@ -22,7 +22,7 @@ body:
   - type: input
     id: operation
     attributes:
-      label: 接口或 Tool 名称
+      label: 接口或 Tool
       description: 例如 china-calendar/dates 或 china_calendar_date。
       placeholder: "请填写接口路径或 Tool 名称"
     validations:
@@ -30,32 +30,32 @@ body:
   - type: textarea
     id: reproduction
     attributes:
-      label: 复现步骤
+      label: 如何复现
       description: 请提供最小化的请求示例和必要参数。
-      placeholder: "请描述如何复现问题"
+      placeholder: "请一步步描述复现过程"
     validations:
       required: true
   - type: textarea
     id: expected
     attributes:
-      label: 期望结果
+      label: 你原本期待什么
     validations:
       required: true
   - type: textarea
     id: actual
     attributes:
-      label: 实际结果
+      label: 实际发生了什么
     validations:
       required: true
   - type: input
     id: request_id
     attributes:
       label: requestId
-      description: 如果响应中包含 requestId，请填写；没有可以留空。
+      description: 如果响应中包含 requestId，请填写；没有就留空。
   - type: input
     id: occurred_at
     attributes:
-      label: 发生时间
+      label: 什么时候发生的
       description: 请使用带时区的 ISO 8601 时间，例如 2026-09-18T10:30:00+08:00。
     validations:
       required: true
