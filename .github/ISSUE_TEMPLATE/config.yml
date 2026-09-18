@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 开发者文档
+    url: https://docs.wanduanapi.com
+    about: 先查看接口说明、快速开始和错误说明。
+  - name: 社区讨论
+    url: https://github.com/wanduanapi/wanduan-community/discussions
+    about: 使用咨询、方案交流和开放性建议请发布到 Discussion。
+  - name: 安全问题
+    url: https://github.com/wanduanapi/wanduan-community/security/advisories/new
+    about: 请使用私人漏洞报告入口，不要公开披露安全细节。
