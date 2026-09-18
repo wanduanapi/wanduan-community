@@ -7,7 +7,7 @@
 ## 从这里开始
 
 - [查看开发者文档](https://docs.wanduanapi.com)
-- [调用公开 API](https://api.wanduanapi.com)
+- [开始第一次 REST 请求](https://docs.wanduanapi.com/products/china-calendar/rest/quickstart)
 - [报告问题](https://github.com/wanduanapi/wanduan-community/issues/new/choose)
 - [参与讨论](https://github.com/wanduanapi/wanduan-community/discussions)
 
